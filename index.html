@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh">
+
 <head>
     <meta charset="utf-8">
     <title>Cyberhan</title>
@@ -72,13 +73,23 @@
             margin-top: 20px;
         }
 
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         @keyframes scratchy {
             0% {
                 background-position: 0 0;
             }
+
             50% {
                 background-position: 100px -100px;
             }
+
             100% {
                 background-position: 0 0;
             }
@@ -88,34 +99,38 @@
             0% {
                 box-shadow: 10px 0 0 0 #f4bd2e
             }
+
             100% {
                 box-shadow: 40px 0 0 0 #f4bd2e
             }
         }
     </style>
 </head>
+
 <body>
-<div id="root">
-    <div class="main">
-        <header>
-            <div class="shape"></div>
-            <h1 class="title">Cyberhan</h1>
-        </header>
-        <section>
-            <div class="dashboard">
-                <ul>
-                    <li><a href="https://blog.cyberhan.cn" target="_blank">个人博客</a></li>
-                    <li><a href="https://github.com/cyberhan123" target="_blank">GitHub</a></li>
-                </ul>
-            </div>
-        </section>
+    <div id="root">
+        <div class="main">
+            <header>
+                <div class="shape"></div>
+                <h1 class="title">Cyberhan</h1>
+            </header>
+            <section>
+                <div class="dashboard">
+                    <ul>
+                        <li><a href="https://blog.cyberhan.cn" target="_blank">个人博客</a></li>
+                        <li><a href="https://github.com/cyberhan123" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </section>
 
+        </div>
+        <p class="footer">design by Cyberhan123 <a href="https://beian.miit.gov.cn" target="_blank"> 辽ICP备17017255号</a></p>
     </div>
-</div>
-<script>
-    (function () {
+    <script>
+        (function () {
 
-    })()
-</script>
+        })()
+    </script>
 </body>
+
 </html>
